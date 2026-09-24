@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="radio-group-example">
+        <div class="radio-class">
+            <lightning-radio-group
+                name="archiveGroup"
+                label="Select Archive Option"
+                options={options}
+                value={selectedVal}
+                onchange={handleRadioChange}
+                required>
+            </lightning-radio-group>
+        <div class="anwer-class">
+            <p lwc:if={isOptionOne}>You selected Option1:Archive</p>
+            <p lwc:if={isOptionTwo}>You selected Option2:Unarchive</p>
+        </div>
+        </div>
+    </lightning-card>
+</template>
+
